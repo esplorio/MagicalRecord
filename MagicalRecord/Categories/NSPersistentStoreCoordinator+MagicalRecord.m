@@ -239,6 +239,7 @@ NSString * const kMagicalRecordPSCMismatchCouldNotRecreateStore = @"kMagicalReco
                              [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,
                              [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption,
                              sqliteOptions, NSSQLitePragmasOption,
+                             NSFileProtectionNone, NSPersistentStoreFileProtectionKey,
                              nil];
     return options;
 }
